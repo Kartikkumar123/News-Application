@@ -1,0 +1,64 @@
+.background{
+  background: linear-gradient(to right,blue,blueviolet);
+  color: white;
+}
+.card-title{
+  font-size: 14px;
+  height: 60px;
+  overflow: auto;
+}
+.card-text{
+  font-size: 13px;
+  height: 180px;
+}
+.card-title::-webkit-scrollbar{
+  display: none;
+}
+.card-date{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid grey;
+  margin-bottom: 10px;
+}
+
+.card-date p{
+  font-size: 12px;
+}
+.text{
+  overflow: hidden;
+}
+
+@media only screen and (min-width:0) and (max-width:576px){
+  .card-title{
+    height: 30px;
+  }
+  .card-text{
+    height: 70px;
+  }
+}
+
+@media only screen and (min-width:577px) and (max-width:768px){
+  .card-title{
+    height: 40px;
+  }
+  .card-text{
+    height:70px;
+  }
+}
+
+@media only screen and (min-width:769px) and (max-width:992px){
+  .card-title{
+    height:60px;  
+  }
+  .card-text{
+    height: 130px;
+  }
+}
+@media only screen and (min-width:993px) and (max-width:1200px){
+  .card-title{
+    height: 60px;
+  }
+  .card-text{
+    height: 165px;
+  }
+}
